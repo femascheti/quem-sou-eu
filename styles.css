@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600&display=swap');
+
+:root {
+  --cor-principal: #284260;
+  --cor-destaque: #f6543b;
+  --cor-historia: #4ebfe9ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: white;
+  color: var(--cor-principal);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main#game {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  background-color: white;
+  padding: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--cor-destaque);
+  margin: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+
+}
+
+#dica {
+  background-color: white;
+  border: 3px solid var(--cor-destaque);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+#grid img {
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  border: 3px solid var(--cor-destaque);
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+#grid img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--cor-destaque);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: var(--cor-historia);
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 28px;
+  }
+
+  #dica {
+      font-size: 16px;
+      padding: 8px;
+  }
+
+  #grid img {
+      width: 100px;
+      height: 100px;
+  }
+
+  button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 24px;
+  }
+
+  #dica {
+      font-size: 14px;
+  }
+
+  #grid {
+      gap: 10px;
+  }
+
+  #grid img {
+      width: 80px;
+      height: 80px;
+  }
+
+  button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
