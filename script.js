@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const jogarNovamenteBtn = document.getElementById('jogar-novamente');
   
     const animais = [
-      { nome: "Leão", dicas: ["Ando na terra", "Sou carnívoro"], img: "imgs/leao_foto.jpg" },
-      { nome: "Elefante", dicas: ["Ando na terra", "Sou herbívoro"], img: "imgs/elefante_foto.jpg" },
-      { nome: "Canguru", dicas: ["Ando na terra", "Sou herbívoro"], img: "imgs/canguru_foto.jpg" },
-      { nome: "Morcego", dicas: ["Eu voo", "Sou onívoro"], img: "imgs/morcego_foto.jpg" },
-      { nome: "Panda", dicas: ["Ando na terra", "Sou herbívoro"], img: "imgs/panda_foto.jpg" },
-      { nome: "Águia", dicas: ["Ando na terra", "Sou carnívoro"], img: "imgs/aguia_foto.jpg" },
-      { nome: "Golfinho", dicas: ["Vivo na água", "Sou carnívoro"], img: "imgs/golfinho_foto.jpg" },
-      { nome: "Papagaio", dicas: ["Eu voo", "Sou onívoro"], img: "imgs/papagaio_foto.jpg" },
-      { nome: "Tubarão", dicas: ["Vivo na água", "Sou carnívoro"], img: "imgs/tubarao_foto.jpg" },
-      { nome: "Urso", dicas: ["Ando na terra", "Sou onívoro"], img: "imgs/urso_foto.jpg" },
+      { nome: "Leão", dicas: ["Ando na terra", "Sou carnívoro", "Tenho juba"], img: "imgs/leao_foto.jpg" },
+      { nome: "Elefante", dicas: ["Ando na terra", "Sou herbívoro", "Tenho tromba"], img: "imgs/elefante_foto.jpg" },
+      { nome: "Canguru", dicas: ["Ando na terra", "Sou herbívoro", "tenho uma bolsa na barriga"], img: "imgs/canguru_foto.jpg" },
+      { nome: "Morcego", dicas: ["Eu voo", "Sou onívoro", "Durmo de cabeça para baixo"], img: "imgs/morcego_foto.jpg" },
+      { nome: "Panda", dicas: ["Ando na terra", "Sou herbívoro", "Diferente dos meus amigos tenho manchas pretas e brancas"], img: "imgs/panda_foto.jpg" },
+      { nome: "Águia", dicas: ["Ando na terra", "Sou carnívoro", "Tenho garras afiadas"], img: "imgs/aguia_foto.jpg" },
+      { nome: "Golfinho", dicas: ["Vivo na água", "Sou carnívoro", "Tenho um buraco no topo da cabeça por onde respiro"], img: "imgs/golfinho_foto.jpg" },
+      { nome: "Papagaio", dicas: ["Eu voo", "Sou onívoro", "Tenho um bico pequeno e curvado"], img: "imgs/papagaio_foto.jpg" },
+      { nome: "Tubarão", dicas: ["Vivo na água", "Sou carnívoro", "Tenho dentes afiados"], img: "imgs/tubarao_foto.jpg" },
+      { nome: "Urso", dicas: ["Ando na terra", "Sou onívoro", "Durmo durante o inverno inteiro"], img: "imgs/urso_foto.jpg" },
     ];
   
     let animalEscolhido = null;
